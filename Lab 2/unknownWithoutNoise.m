@@ -1,0 +1,10 @@
+data=csvread('unknownMicro2.csv');
+x=data(:,1);
+y=data(:,2);
+h=figure;
+plot(x,y);
+xlabel('Distance From Maximum (cm)');
+ylabel('Amplitude at 1GHz (dB)');
+title('Unknown Load Microstrip');
+saveas(h,'Unknown Load Microstrip Without Noise.pdf');
+close (h);
