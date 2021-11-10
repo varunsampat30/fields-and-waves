@@ -19,3 +19,6 @@ epsilon_eff = ( (epsilon_r + 1)/2 ) + ( ( (epsilon_r - 1)/2 ) * ( (1 + 10/s)^(-1
 %% compute t and Z_0
 t = (30.67/s)^0.75
 Z_0 = (60/sqrt(epsilon_eff)) * log( (6 + (2*pi - 6)*exp(-t))/(s) + sqrt(1+4/s^2) )
+
+%% theoretical velocity
+u_phase = (3*10^8)/sqrt(epsilon_eff)
